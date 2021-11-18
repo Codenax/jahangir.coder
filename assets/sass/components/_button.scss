@@ -1,0 +1,211 @@
+.btn:focus {
+    outline: 0;
+    box-shadow:none; 
+}
+.btn-box-11,.btn-box-12{
+    color:$color-wh !important;
+    border: solid .1rem $color-bul-3;
+    background-color: #007ab3b0 ;
+    background-image: linear-gradient(45deg,#0a2948 50%,transparent 0);
+    background-position: 100%;
+    background-size: 400%;
+    font-size:1.6rem;
+    padding: .6rem 3rem !important;
+    margin: 1.4rem 0 !important;
+    border-radius: 1rem;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
+    transition: all .9s;
+}
+
+.btn-box-11:hover,.btn-box-12:hover{
+    text-decoration: none;
+    color:$menu-li-h!important;
+    background-position: 0;
+    transition: all .9s;
+}
+.btn-box-12{
+    background-size: 200%;
+    transition: all .5s;
+}
+.btn-box-12:hover{
+    background-position: 0;
+    transition: all .5s;
+}
+
+
+.btn-g-cu-1, .btn-g-cu-4 {
+    color: $color-wh;
+    padding: .8rem 2rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    box-shadow: $button-sh;
+    font-size: 1.6rem;
+    letter-spacing: normal;
+    .i-left {
+        margin-right: 0.2rem;
+        opacity: 0;
+        transition: all 0.3s;
+    }
+    .i-right {
+        margin-left: 0.2rem;
+        opacity: 0;
+        transition: all 0.3s;
+    }
+}
+
+.btn-g-cu-1:hover,.btn-g-cu-4:hover {
+    text-decoration: none;
+    color: $color-wh;
+    background-position: left center;
+    letter-spacing: 0.1rem;
+    .i-left {
+        margin-right: 1.5rem;
+        margin-left: -1.5rem;
+        opacity: 1;
+        transition: all 0.5s;
+    }
+    .i-right {
+        margin-left: 1.5rem;
+        margin-right: -1.5rem;
+        opacity: 1;
+        transition: all 0.3s;
+    }
+
+    transition: all 0.5s;
+}
+
+.btn-g-cu-4 {
+    background: $color-g-cu-4;
+    background-size: 200% auto;
+    background-position: right center;    
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.btn-g-cu-1 {
+    background: $color-g-cu-1;
+    background-size: 200% auto;
+    background-position: right center;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+@media(max-width:991px){
+    .btn-g-cu-1,
+    .btn-g-cu-4{
+        .i-left {
+          display: none;
+        }
+        .i-right {
+        display: none;
+        }
+    } 
+}
+
+.btn-box-10 {
+    color: $color-wh;
+    background-color: $color-grl-3;
+    padding: .7rem 2rem;
+    border-radius: .5rem;
+    font-weight: 500;
+    font-size: 1.6rem;
+    outline: 0;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+.btn-box-10:hover{
+    color: $color-wh;
+    background-color: $color-grl-4;
+    text-decoration: none;
+    box-shadow: $icon-sh;
+    transition: all 0.5s;
+}
+
+.btn-box-1 {
+    color: $color-wh;
+    padding: 1rem 2rem;
+    border: solid 0.15rem $color-wh;
+    border-radius: .5rem;
+    font-weight: 500;
+    font-size: 1.6rem;
+    display: inline-block;
+    outline: 0;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    box-shadow: $icon-sh;
+    transition: all 0.5s;
+}
+.btn-box-1:hover{
+    text-decoration: none;
+    color: $color-wh;
+    box-shadow: none;
+    transition: all 0.5s;
+}
+
+//-socile link-icon--//
+.icon-wb-6 {
+    li {
+      display: inline;
+      a {
+        color: $text-c-head;
+        border: solid $text-c-head;
+        border-radius: 2rem;
+        border-width: 0.15rem; 
+        padding: 1rem 0rem;
+        width: 40px;
+        margin: 0rem 0.6rem;
+        height: 40px;
+        display: inline-block;
+        font-size: 15px;
+        text-align: center;
+        i{
+            line-height: 1.2;
+        }
+        transition: all 0.5s;
+      }
+      a:hover {
+        border-color: $text-c-head;
+        border-radius: 1rem;
+        box-shadow: $icon-sh;
+        transition: all 0.5s;
+      }
+    }
+  }
+
+  
+.icon-bw-3 {     
+    
+    li {
+        display: inline;
+        a {
+            color: $color-wh;
+            border: solid $color-wh;
+            border-radius: 2rem;
+            transition: all .5s;
+            border-width: 0.15rem;
+            padding: 0.8rem 0rem;
+            width: 40px;
+            margin: 0rem 0.6rem;
+            height: 40px;
+            display: inline-block;
+            font-size: 15px;
+            text-align: center;
+            box-shadow: $icon-sh;
+            i{
+                line-height: 1.3;
+            }
+        }
+        a:hover {
+            border-radius: .5rem;
+            -webkit-transition: all 0.5s;
+            box-shadow: none;
+            transition: all 0.5s;
+        }
+    }
+}
+
+.social-icon-button{
+    justify-content: start;
+    align-items: center;
+    .social-icon{
+        text-align: right;
+    }
+}
+//-socile link-icon end--//

@@ -1,0 +1,40 @@
+.policy-section{
+    padding: 10rem 0;
+}
+.policy_contain {
+    .contain_area {
+        background-color: $color-wh;
+        padding: 1rem 3rem;
+        box-shadow: $card-sh-2;
+        border-radius: .5rem;
+      //  border: solid .1rem $primary-c-bo-2 ;
+        a{
+            color:$primary-c;
+            font-weight: 700;
+            transition: all .3s;
+        }
+        a:hover{
+            color: $color-bul;
+            transition: all .3s;
+        }
+        .single_contain {
+            .heading {
+                margin-top: 3rem;
+                h4{
+                    font-size: 17px;
+                }
+            }
+            .paragraph {
+                margin-top: 1rem;
+                p {
+                    text-align: justify;
+                    font-family: "Rubik", sans-serif;
+                    font-size: 15px;
+                }
+                ul{
+                    padding-left: 2rem;
+                }
+            }
+        }
+    }
+}

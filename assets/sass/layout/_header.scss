@@ -1,0 +1,219 @@
+//--Maga menu start--//
+
+.header-menu-area.transparensi{
+    background-color: transparent;
+    color: $color-wh;
+    position: absolute;
+    z-index: 999;
+    width: 100%;
+    img.white{
+        display: block;
+    }
+    img.black{
+        display: none;
+    }
+    .menu li a {
+        font-size: 14px;
+        font-weight: 700;
+        color: $color-wh;
+        margin: 0 1.2rem;
+        padding: 2rem 0;
+        display: block;
+        letter-spacing: 0.01rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: all 0.4s;
+    }
+    .menu li a:hover {
+        color: $menu-li-h;
+        transition: all 0.4s;
+    }
+    .btn-mobail-icon {
+        cursor: pointer;
+        font-size: 1.5rem;
+        margin: 1.6rem 0;
+
+        span {
+            box-shadow: $menu-sh;
+            color: $color-wh;
+            padding: 0.7rem 1rem;
+            border: solid $color-wh 0.13rem;
+            border-radius: 2rem;
+            border-bottom-right-radius: 5px !important;
+        }
+    }
+}
+header {
+
+    .header-menu-area.animated {
+        img.white{
+            display: none;
+        }
+        img.black{
+            display: block;
+        }
+        a.black{
+            color:$color-bl-6;
+        }
+        }
+    .header-menu-area {
+      
+        .navbar-brand {
+            margin-right: 0;
+            img {
+                width: 180px;
+                height: auto;
+            }
+           
+        }
+    }
+}
+
+//--Maga menu end--//
+
+///--stiky menu start--//
+
+.primary-menu.fixed-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background-color: $background-c;
+    box-shadow: $menu-sh;
+    
+    .menu li a {
+        color: $color-bl-6;
+    }
+    .menu li a:hover {
+        color: $color-bl-9;
+        //text-shadow: 2px 2px 8px $primary-c;
+        transition: all 0.4s;
+    }
+    .btn-mobail-icon {
+        cursor: pointer;
+        font-size: 1.5rem;
+        margin: 1.6rem 0;
+
+        span {
+            color: $primary-c;
+            border: solid $primary-c 0.13rem;          
+        }
+    }
+}
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+.fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+}
+@media (print), (prefers-reduced-motion: reduce) {
+    .animated {
+        -webkit-animation-duration: 1ms !important;
+        animation-duration: 1ms !important;
+        -webkit-transition-duration: 1ms !important;
+        transition-duration: 1ms !important;
+        -webkit-animation-iteration-count: 1 !important;
+        animation-iteration-count: 1 !important;
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+///--stiky menu end--//
+//mobail menu//
+
+@media (max-width: 991px) {
+    .primary-menu.fixed-menu {
+        padding: 4px 0;
+    }
+    .primary-menu.animated {
+        .btn-mobail-icon {
+            cursor: pointer;
+            font-size: 1.5rem;
+            margin: 1.4rem 0;
+        }
+    }
+}
+
+
+.overlay {
+    display: block;
+    width: 0;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: $primary-c-t;
+    z-index: 999999;
+    overflow-x: hidden;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    overflow-y: auto;
+    .navbar-brand {
+        padding: 2rem 0;
+        text-align: left;
+        margin-left: 3rem !important;
+        img {
+            width: 20rem;
+        }
+    }
+    .closebtn {
+        position: absolute;
+        top: 3.5rem;
+        right: 5%;
+        color: $background-c-2;
+        border: solid $background-c-2;
+        border-radius: 1rem;
+        border-width: 0.15rem;
+        padding: 0.2rem 0rem;
+        width: 35px;
+        height: 35px;
+        padding-top: 0.5rem;
+        font-size: 2rem;
+        text-align: center;
+        box-shadow: $menu-sh;
+    }
+
+    .mobile-menu {
+        padding-top: 3rem;
+        border-top: 2px solid $background-c-2;
+        overflow-y: auto;
+        text-align: center;
+
+        .nav-item {
+            a {
+                font-size: 16px;
+                font-weight: 600;
+                color: $background-c-2;
+                letter-spacing: 0.01rem;
+                text-transform: uppercase;
+                display: block;
+                border-bottom: solid rgb(241, 241, 241);
+                border-width: 0.05rem;
+                padding: 1rem 0;
+                padding-left: 2rem;
+            }
+        }
+
+      
+    }
+}
+
+//--end mobile menu--//

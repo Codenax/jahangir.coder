@@ -1,0 +1,436 @@
+a {
+    color: $text-c-head;
+}
+a:hover {
+    color: $text-c-head;
+    text-decoration: none;
+}
+
+.jb-service-card {
+    .item-area .feature-item {
+        text-align: center;
+        position: relative;
+        padding: 5rem 1.5rem !important;
+
+        margin-bottom: 30px;
+        background-color: $color-wh;
+        box-shadow: $card-sh;
+        border: solid 0.1rem $primary-c-bo-2;
+        transition: all 0.4s;
+        h3{
+            font-size: 2rem;
+            text-transform:capitalize;
+        }
+        p{
+            font-size: 1.4rem;
+            text-align: justify;
+        }
+        .skew-style-border {
+            margin-bottom: 30px;
+            width: 150px;
+            height: 75px;
+            padding-top: 2rem;
+            text-align: center;
+            line-height: 92px;
+            position: relative;
+            display: inline-block;
+            transition: all 0.4s;
+            i {
+                color: $primary-c;
+                font-size: 3rem;
+                transition: all 0.4s;
+            }
+        }
+        .skew-style-border:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            border: 1px solid $primary-c;
+            border-radius: 48%;
+            transform: rotate(-15deg);
+            z-index: 0;
+            box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
+            transition: all 0.4s;
+        }
+        .learn-more {
+            color: $primary-c;
+            position: absolute;
+            bottom: 1rem;
+            right: 1rem;
+            opacity: 0;
+            transition: all 0.4s;
+            h5 {
+                float: left;
+            }
+            i {
+                font-size: 2rem;
+                margin-left: 0.5rem;
+                margin-top: 0.1rem;
+            }
+        }
+    }
+    .feature-item:hover {
+        box-shadow: $card-sh-3;
+        border: solid 0.1rem $primary-c-2;
+        transform: translateY(-15px);
+        transition: all 0.4s;
+        .learn-more {
+            color: $primary-c-2;
+            opacity: 1;
+            transition: all 0.4s;
+        }
+        .skew-style-border {
+            i {
+                color: $primary-c-2;
+                transition: all 0.4s;
+            }
+        }
+        .skew-style-border:after {
+            border-color: $primary-c-2;
+            transition: all 0.4s;
+        }
+    }
+    
+}
+.jb-service-card {
+    .item-area:nth-child(3) {
+        .feature-item {
+            margin-top: 10rem;
+        }
+    }
+    .item-area:nth-child(6) {
+        .feature-item {
+            margin-top: -8rem;
+        }
+    }
+    .item-area:nth-child(5) {
+        .feature-item {
+            margin-top: 10rem;
+        }
+    }
+    .item-area:nth-child(8) {
+        .feature-item {
+            margin-top: -8rem;
+        }
+    }
+    .item-area:nth-child(9) {
+        .feature-item {
+            margin-top: -6rem;
+        }
+    }
+}
+
+.jb-service-card-2{
+ 
+    .item-area-2 .feature-item-2 {
+        position: relative;
+        padding: 5rem 2rem !important;
+        padding-right: 1rem !important;
+        margin-bottom: 3rem;
+        background-color: $color-wh;
+        //  box-shadow: $card-sh;
+        border: solid 0.1rem $color-bl-7;
+        transition: all 0.4s;
+      
+        .skew-style-border { 
+            position: absolute; 
+            top: 2rem;
+            left: 2rem;
+            i {
+                color: $primary-c;
+                font-size: 3rem;
+                transition: all 0.4s;
+            }
+        }
+        .title {
+            font-size: 2rem;
+            text-transform: capitalize;
+        }
+        .list {
+            li {
+                list-style: none;
+                margin-bottom: 2rem;
+                i {
+                    float: left;
+                    font-size: 1.6rem;
+                    color: $primary-c;
+                    transition: all 0.4s;
+                }
+                h5 {
+                    font-size: 1.3rem;
+                    margin-left: 1.2rem;
+                }
+            }
+        }
+        .learn-more {
+            color: $primary-c-2;
+            position: absolute;
+            bottom: 1rem;
+            right: 1rem;
+            opacity: 0;
+            transition: all 0.4s;
+            h5 {
+                float: left;
+            }
+            i {
+                color: $primary-c-2;
+                font-size: 2rem;
+                margin-left: 0.5rem;
+                margin-top: 0.1rem;
+                transition: all 0.4s;
+            }
+        }
+    }
+    .feature-item-2:hover {
+        box-shadow: $card-sh-3;
+        border: solid 0.1rem $primary-c-2;
+        transform: translateY(-15px);
+        transition: all 0.4s;
+        .learn-more {
+            opacity: 1;
+            transition: all 0.4s;
+        }
+        .skew-style-border {
+            i {
+                color: $primary-c-2;
+                transition: all 0.4s;
+            }
+        }
+        .list {
+            li {
+                i {
+                    color: $primary-c-2;
+                    transition: all 0.4s;
+                }
+            }
+        }
+    }
+}
+
+.jb-service-card-2 {
+    .item-area-2:nth-child(1) {
+        .feature-item-2 {
+            margin-top: -4rem;
+        }
+    }
+    .item-area-2:nth-child(2) {
+        .feature-item-2 {
+            margin-top: 2rem;
+        }
+    }
+    .item-area-2:nth-child(3) {
+        .feature-item-2 {
+            margin-top: 8rem;
+        }
+    }
+    .item-area-2:nth-child(4) {
+        .feature-item-2 {
+            margin-top: 16rem;
+        }
+    }
+    .item-area-2:nth-child(5) {
+        .feature-item-2 {
+            margin-top: -12rem;
+        }
+    }
+    .item-area-2:nth-child(6) {
+        .feature-item-2 {
+            margin-top: -17rem;
+        }
+    }
+    .item-area-2:nth-child(7) {
+        .feature-item-2 {
+            margin-top: 0rem;
+        }
+    }
+    .item-area-2:nth-child(8) {
+        .feature-item-2 {
+            margin-top: 1rem;
+        }
+    }
+
+
+}
+
+@media (max-width: 991px) {
+    .jb-service-card {
+     
+        .item-area:nth-child(3) {
+            .feature-item {
+                margin-top: 10rem;
+            }
+        }
+        .item-area:nth-child(4) {
+            .feature-item {
+                margin-top: -8rem;
+            }
+        }
+        .item-area:nth-child(6) {
+            .feature-item {
+                margin-top: -2rem;
+            }
+        }
+        .item-area:nth-child(5) {
+            .feature-item {
+                margin-top: 0rem;
+            }
+        }
+        .item-area:nth-child(8) {
+            .feature-item {
+                margin-top: -4rem;
+            }
+        }
+        .item-area:nth-child(9) {
+            .feature-item {
+                margin-top: 0rem;
+            }
+        }
+    }
+    .jb-service-card-2 {
+        
+        .item-area-2:nth-child(1) {
+            .feature-item-2 {
+                margin-top: -2rem;
+            }
+        }
+        .item-area-2:nth-child(2) {
+            .feature-item-2 {
+                margin-top: 6rem;
+            }
+        }
+        .item-area-2:nth-child(3) {
+            .feature-item-2 {
+                margin-top: 0rem;
+            }
+        }
+        .item-area-2:nth-child(4) {
+            .feature-item-2 {
+                margin-top: -3rem;
+            }
+        }
+        .item-area-2:nth-child(5) {
+            .feature-item-2 {
+                margin-top: 0rem;
+            }
+        }
+        .item-area-2:nth-child(6) {
+            .feature-item-2 {
+                margin-top: -7rem;
+            }
+        }
+        .item-area-2:nth-child(7) {
+            .feature-item-2 {
+                margin-top: 0rem;
+            }
+        }
+     
+    
+    }
+}
+@media (max-width: 767px) {
+    .jb-service-card {
+        padding-bottom: 10rem !important;
+        .item-area:nth-child(3) {
+            .feature-item {
+                margin-top: 0rem;
+            }
+        }
+        .item-area:nth-child(4) {
+            .feature-item {
+                margin-top: 0rem;
+            }
+        }
+        .item-area:nth-child(6) {
+            .feature-item {
+                margin-top: 0rem;
+            }
+        }
+        .item-area:nth-child(5) {
+            .feature-item {
+                margin-top: 0rem;
+            }
+        }
+        .item-area:nth-child(8) {
+            .feature-item {
+                margin-top: 0rem;
+            }
+        }
+    }
+    .jb-service-card-2{
+        .item-area-2:nth-child(8) {
+            .feature-item-2 {
+                margin-top: 0rem;
+            }
+        }
+    }
+}
+ @media (max-width: 575px){
+    .jb-service-card-2 {
+      margin-top: 4rem;
+        margin-bottom: 8rem;
+        .item-area-2:nth-child(1) {
+            .feature-item-2 {
+                margin-top: 0rem;
+            }
+        }
+        .item-area-2:nth-child(2) {
+            .feature-item-2 {
+                margin-top: 0rem;
+            }
+        }
+        .item-area-2:nth-child(3) {
+            .feature-item-2 {
+                margin-top: 0rem;
+            }
+        }
+        .item-area-2:nth-child(4) {
+            .feature-item-2 {
+                margin-top: 0rem;
+            }
+        }
+        .item-area-2:nth-child(5) {
+            .feature-item-2 {
+                margin-top: 0rem;
+            }
+        }
+        .item-area-2:nth-child(6) {
+            .feature-item-2 {
+                margin-top: 0rem;
+            }
+        }
+        .item-area-2:nth-child(7) {
+            .feature-item-2 {
+                margin-top: 0rem;
+            }
+        }
+    
+    }
+ }
+
+@media screen and (min-width:768px) and (max-width:991px){
+    .jb-service-card-2 .item-area-2 .feature-item-2  {
+        margin-right: auto;
+        margin-left: auto;
+        width: 280px;
+    }
+    .jb-service-card .item-area .feature-item  {
+        margin-right: auto;
+        margin-left: auto;
+        width: 280px;
+    }
+}
+@media screen and (min-width:320px) and (max-width:575px){
+    .jb-service-card-2 .item-area-2 .feature-item-2  {
+        margin-right: auto;
+        margin-left: auto;
+        width: 290px;
+    }
+    .jb-service-card .item-area .feature-item {
+        margin-right: auto;
+        margin-left: auto;
+        width: 290px;
+    }
+}

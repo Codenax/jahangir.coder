@@ -1,0 +1,105 @@
+.payment-section {
+    .payment-contain {
+        padding: 3rem 2rem;
+        border-radius: .5rem;
+        box-shadow:$card-sh;
+        background-color: #fff;
+        h4 {
+            font-size: 1.8rem;
+            letter-spacing: 0.1rem;
+            margin-bottom: 2rem;
+            text-transform: uppercase;
+            position: relative;
+            display: inline-block;
+        }
+        h4::after {
+            content: "";
+            position: absolute;
+            bottom: -0.3rem;
+            left: 0;
+            width: 50%;
+            border-bottom: solid 0.2rem #40ceb2;
+            color: #40ceb2;
+        }
+        .payment-method {
+           .contain{
+               padding-left: 2rem;
+               .single-line{
+                margin-bottom: 1rem;
+                i{
+                    //margin-right: 1rem;
+                    color: $primary-c;
+                    font-size: 1.9rem;
+                    float: left;
+                }
+                h5{
+                    font-weight: 400;
+                    font-size: 1.7rem;
+                    margin-left: 1.5rem;
+                    
+                }
+               }
+              
+           }
+        }
+        .faq{
+            margin-top: 3rem;
+            .accordion {
+                .card {
+                    border: none;
+                    border-bottom: solid rgb(194, 193, 193) 0.05rem;
+                   // border-top: solid rgb(241, 241, 241) 0.05rem;
+                    .card-header {
+                        background-color: #fff;
+                        padding: 0 0;
+                       
+                        border: none;
+                        margin-top: .5rem;
+                        a {
+                            text-decoration: none;
+                            border: none;
+                        }
+                        a:hover {
+                            text-decoration: none;
+                        }
+                        h5 {
+                            padding: 1rem 1rem;
+                            font-size: 17px;
+                            font-weight: 400;
+                          padding-right: 1.2rem;
+                            position: relative;
+                            display: block;
+        
+                            i {
+                                color: $primary-c ;
+                                position: absolute;
+                                right: 0rem;
+                                top: 50%;
+                                transform: translateY(-50%) rotateZ(-180deg);
+                                transition: all 1s;
+
+                            }
+                        }
+        
+                        .collapsed {
+                            h5 i {
+                                right: 0rem;
+                                transform: translateY(-50%) rotateZ(0deg);
+                                transition: all 1s;
+                            }
+                        }
+                    }
+                    .card-body {
+                       padding: 1rem 2rem;
+                        p {
+                            font-size: 15px;
+                            font-weight: 400;
+                           color: $text-c-head;
+                        }
+                    }
+                }
+            }
+        }
+    }
+   
+}

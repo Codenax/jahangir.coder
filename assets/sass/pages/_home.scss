@@ -1,0 +1,224 @@
+.top-banner {
+    background-image: url(../images/background/1bg-2.png);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.top-heading {
+    // position: relative;
+    padding-top: 16rem;
+    .contain {
+        padding-left: 20rem;
+    }
+}
+.top-right-banner {
+    padding-left: 3rem;
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+.about-me {
+    padding-top: 10rem;
+    .my-image{
+        margin-right: auto;
+        margin-left: auto;
+        width: 80%;
+      // border: solid .1rem $color-bl-8;
+      border-bottom-left-radius: 5rem;
+      border-top-right-radius: 5rem;
+        overflow: hidden;
+        box-shadow: $card-sh;
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+    .name-title-area {
+        margin-left: 0;
+        margin-right: auto;
+        width: 330px;
+        color: $color-bl-3;
+        font-family: "Montserrat", sans-serif;
+        .letter {
+           
+            h1 {
+                border-right: 0.3rem solid $color-wh;
+                font-weight: 500;
+                padding-right: 1rem;
+                font-size: 6rem;
+                border-width: 0.3rem;
+                padding-right: 0.5rem;
+                margin-right: 1rem;
+                line-height: 0.9;
+                color: $color-wh;
+             
+            }
+        }
+        .name-title {
+            letter-spacing: 0.1rem;
+           // font-family: "Montserrat", sans-serif;
+           color: $color-wh;
+            h3 {
+                font-size: 2.8rem;
+                line-height: 0.9;
+            }
+            h4 {
+                font-size: 2rem;
+                font-style: italic;
+            }
+        }
+    }
+    .career-path {
+        border-top: solid $color-wh 0.1rem;
+        border-bottom: solid $color-wh 0.1rem;
+        color: $color-wh;
+        p{
+            margin: 0;
+        }
+    }
+   
+    .about-info-contain{
+        padding: 2rem 2rem;
+        padding-bottom: 0rem;
+        padding-left: 3rem;
+        background-color: $color-wh ;
+        font-weight: 500;
+        font-family: 'Raleway', sans-serif;
+        border-radius: .5rem;
+        box-shadow: $card-sh;
+      
+        strong{
+            font-weight: bolder;
+        }
+        h4{
+            font-size: 2rem;
+            letter-spacing: .1rem;
+            text-transform: uppercase;
+            position: relative;
+            display: inline-block;
+
+        }
+        h4::after{
+            content: "";
+            position: absolute;
+            bottom: -.3rem;
+            left: 0;           
+            width: 50%;
+            border-bottom: solid .2rem $primary-c;
+            color: $primary-c;
+        }
+        h5{
+            font-size: 1.5rem;
+            letter-spacing: .1rem;
+            text-transform: capitalize;
+            
+        }
+        p{
+            font-size: 1.3rem;
+            font-weight: 500;
+        }
+        .about-info-item{
+         .institute-info{
+             padding-right: .5rem;
+             text-align: left;
+         }
+            .taitle-info {
+                text-align: left;
+             padding-left: 1rem;
+                border-bottom: solid #cecece;
+                border-width:  0.1rem;
+                margin-bottom: 1rem;
+                p{
+                    text-align: justify;
+                }
+              }
+              
+        }
+        .about-info-item:last-child{
+            .taitle-info{
+                border: none; 
+            }
+        }
+    }
+}
+//---expart in---//
+.expart-in {
+    font-family: 'Raleway', sans-serif;
+    strong{
+        font-weight: bolder;
+        margin-right: 1rem;
+    }
+    h4{
+        font-size: 2rem;
+        letter-spacing: .1rem;
+       // text-transform: uppercase;
+        position: relative;
+        display: inline-block;
+        margin-bottom: 2rem !important;
+
+    }
+    h4::after{
+        content: "";
+        position: absolute;
+        bottom: -.3rem;
+        left: 0;           
+        width: 50%;
+        border-bottom: solid .2rem $primary-c;
+        color: $primary-c;
+    }
+    h5{
+        font-size: 1.4rem;
+        letter-spacing: .1rem;
+        
+        
+    }
+    .espert-in-item {
+      background-color: $color-wh;
+        padding: 3rem 2rem;
+        margin-top: 4rem;
+        border-radius: .5rem;
+        box-shadow: $card-sh;
+
+      .progress-items {
+        width: 100%;
+        
+        .progress {
+          background-color: #e9e9e9;
+          border-radius: 0;
+          height: .5rem;
+          overflow: visible;
+          margin-bottom: 15px;
+      
+          .progress-bar {
+            position: relative;
+            background-color: $primary-c;
+            min-width: 32px;
+            overflow: visible;
+          
+            span {
+              position: absolute;
+              top: -.8rem;
+              right: -1rem;
+              width: 2rem;
+              height: 2rem;
+              border: solid .3rem $color-wh;
+              border-radius: 5rem;
+              background: $primary-c;
+              box-shadow: $card-sh-2;
+            }
+            
+          }
+        }
+      }
+    }
+  }
+  //---expart in end---//
+  //--clint-review--//
+  .clint-review{
+      padding-bottom: 10rem;
+  }
+  //--clint-review end--//
